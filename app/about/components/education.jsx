@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Me4 from "@/public/image/me3.jpg";
+import Me4 from "@/public/image/me3.jpeg";
 import Me5 from "@/public/image/me.jpg";
 import Me6 from "@/public/image/me1.jpg";
 
@@ -81,26 +81,27 @@ export default function Education() {
             {/* Description */}
             <div className="flex items-center gap-2">
               <p className="text-gray-600 text-justify title text-lg">
-                I'm currently pursuing a{" "}
+                I&apos;m currently pursuing a{" "}
                 <span className="text-black font-medium">
-                  Bachelor of Business Administration (BBA) with a specialization
-                  in Digital Marketing
+                  Bachelor of Business Administration (BBA) with a
+                  specialization in Digital Marketing
                 </span>{" "}
                 at{" "}
                 <span className="text-black font-medium">
                   Dev Bhoomi Uttarakhand University
                 </span>
-                . Along with core business and marketing concepts, my studies
-                emphasize digital strategies, analytics, and the integration of
-                AI-driven tools in marketing.
+                . Along with core business and marketing concepts, my
+                studies emphasize digital strategies, analytics, and the
+                integration of AI-driven tools in marketing.
                 <br />
                 <br />
                 <span className="text-black font-medium">
-                  This program is helping me build a strong foundation in
-                  business management while exploring how artificial
-                  intelligence is reshaping digital marketing. My goal is to
-                  combine business knowledge, digital expertise, and AI
-                  applications to grow as a professional digital marketer.
+                  This program is helping me build a strong foundation
+                  in business management while exploring how artificial
+                  intelligence is reshaping digital marketing. My goal
+                  is to combine business knowledge, digital expertise,
+                  and AI applications to grow as a professional digital
+                  marketer.
                 </span>
               </p>
             </div>
