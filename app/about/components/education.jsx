@@ -1,7 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import Me4 from "@/public/image/me3.jpeg";
+import Me4 from "@/public/image/me3.jpg";
 import Me5 from "@/public/image/me.jpg";
 import Me6 from "@/public/image/me1.jpg";
 
