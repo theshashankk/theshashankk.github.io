@@ -11,7 +11,7 @@ import Link from "next/link";
 // components
 import Button from "@/components/Button";
 import Me from "@/public/image/me.jpg";
-import MeAbout from "@/public/image/me2.jpg";
+import MeAbout from "@/public/image/me1.jpg";
 import Setup from "@/public/image/setup.jpg";
 import Hr from "@/components/Hr";
 // icons
