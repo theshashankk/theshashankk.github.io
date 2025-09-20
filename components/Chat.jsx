@@ -18,4 +18,4 @@ const KoFi = () => {
   );
 };
 
-export default BuyMeACoffee;
+export default KoFi;
