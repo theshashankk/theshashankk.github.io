@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.theshashankk.github.io/sitemap2.xml
+Sitemap: https://www.theshashank.qzz.io/sitemap2.xml
