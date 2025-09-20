@@ -15,7 +15,7 @@ export const metadata = {
         "I’m Shashank sharma, a BBA student specializing in Digital Marketing at Dev Bhoomi Uttarakhand University.",
 
     author: "Shashank Sharma",
-    siteUrl: "https://www.theshashankk.github.io",
+    siteUrl: "https://www.theshashank.qzz.io",
     applicationName: "Shashank",
 
     keywords: [
@@ -32,7 +32,7 @@ export const metadata = {
 
     openGraph: {
         type: "website",
-        url: "https://www.theshashankk.github.io",
+        url: "https://www.theshashank.qzz.io",
         title: "Shashank | Portofolio",
         site_name: "Shashank | Portofolio",
         description: "My name is shashank, This is my portofolio website.",
