@@ -1,11 +1,14 @@
 const fetch = require("node-fetch");
 
 exports.handler = async function(event, context) {
-  const params = new URLSearchParams(event.queryStringParameters);
-  const code = params.get("code");
+  const params = event.queryStringParameters;
+  const code = params && params.code;
 
   if (!code) {
-    return { statusCode: 400, body: "No code received from Spotify" };
+    return { 
+      statusCode: 400, 
+      body: "No code received from Spotify. Make sure you accessed via the login flow." 
+    };
   }
 
   const client_id = "022c39eddbe74d5d9f6fd358cc07c33c";
@@ -29,6 +32,6 @@ exports.handler = async function(event, context) {
 
   return {
     statusCode: 200,
-    body: `Access Token: ${tokens.access_token}\nRefresh Token: ${tokens.refresh_token}`
+    body: `✅ Spotify Refresh Token:\n\n${tokens.refresh_token}`
   };
 };
