@@ -13,7 +13,7 @@ const KoFi = () => {
       if (window.kofiWidgetOverlay) {
         window.kofiWidgetOverlay.draw("shashank76914", {
           type: "floating-chat",
-          "floating-chat.donateButton.text": "Buy me a coffee ☕",
+          "floating-chat.donateButton.text": "Buy me a coffee",
           "floating-chat.donateButton.background-color": "#FF813F",
           "floating-chat.donateButton.text-color": "#fff",
         });
