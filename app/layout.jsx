@@ -55,7 +55,6 @@ export default function RootLayout({ children }) {
                 <ClientTopProgressBar />
                 <Navbar />
                 {children}
-                <KoFi/>
                 <Analytics />
             </body>
         </html>
