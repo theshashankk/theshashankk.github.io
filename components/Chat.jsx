@@ -1,26 +1,28 @@
-// components/BuyMeACoffee.js
+// components/Chat.jsx
 "use client";
-import Script from "next/script";
+import { useEffect } from "react";
 
 const KoFi = () => {
-  return (
-    <>
-      {/* Load Ko-fi widget script */}
-      <Script src="https://storage.ko-fi.com/cdn/scripts/overlay-widget.js" strategy="afterInteractive" />
+  useEffect(() => {
+    // Load Ko-fi widget script
+    const script = document.createElement("script");
+    script.src = "https://storage.ko-fi.com/cdn/scripts/overlay-widget.js";
+    script.async = true;
+    script.onload = () => {
+      // When script loads, initialize the widget
+      if (window.kofiWidgetOverlay) {
+        window.kofiWidgetOverlay.draw("shashank76914", {
+          type: "floating-chat",
+          "floating-chat.donateButton.text": "Buy me a coffee ☕",
+          "floating-chat.donateButton.background-color": "#FF813F",
+          "floating-chat.donateButton.text-color": "#fff",
+        });
+      }
+    };
+    document.body.appendChild(script);
+  }, []);
 
-      {/* Initialize widget after script loads */}
-      <Script id="ko-fi-widget" strategy="afterInteractive">
-        {`
-          kofiWidgetOverlay.draw('shashank76914', {
-            type: 'floating-chat',
-            'floating-chat.donateButton.text': 'Support Me',
-            'floating-chat.donateButton.background-color': '#323842',
-            'floating-chat.donateButton.text-color': '#fff'
-          });
-        `}
-      </Script>
-    </>
-  );
+  return null; // nothing is rendered directly, only the widget script
 };
 
 export default KoFi;
