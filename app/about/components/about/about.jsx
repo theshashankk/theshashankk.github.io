@@ -108,10 +108,10 @@ export default function About() {
 						type: "spring",
 					}}>
 					<h2 className="text-2xl font-bold tracking-wider mb-3">
-						Shashank Sharma
+						Shashank kumar Sharma
 					</h2>
 					<p className="text-gray-600 text-justify title text-lg">
-						Hey there, I&rsquo;m Shashank Sharma, a
+						Hey there, I&rsquo;m Shashank kumar Sharma, a
 						<span className="text-black font-medium">
 							{" "}
 							Aspiring Marketing profession
