@@ -5,7 +5,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 config.autoAddCss = false;
 import "./nprogress.css";
 import { Analytics } from "@vercel/analytics/react";
-import KoFi from "@/components/Chat";
+import TawkChat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
 
 export const metadata = {
@@ -55,6 +55,7 @@ export default function RootLayout({ children }) {
                 <ClientTopProgressBar />
                 <Navbar />
                 {children}
+                <TawkChat/>
                 <Analytics />
             </body>
         </html>
