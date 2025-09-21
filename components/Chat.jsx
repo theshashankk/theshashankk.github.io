@@ -2,27 +2,27 @@
 "use client";
 import { useEffect } from "react";
 
-const KoFi = () => {
+const TawkChat = () => {
   useEffect(() => {
-    // Load Ko-fi widget script
+    // Prevent duplicate script injection
+    if (document.getElementById("tawk-script")) return;
+
     const script = document.createElement("script");
-    script.src = "https://storage.ko-fi.com/cdn/scripts/overlay-widget.js";
+    script.id = "tawk-script";
     script.async = true;
-    script.onload = () => {
-      // When script loads, initialize the widget
-      if (window.kofiWidgetOverlay) {
-        window.kofiWidgetOverlay.draw("shashank76914", {
-          type: "floating-chat",
-          "floating-chat.donateButton.text": "Buy me a coffee",
-          "floating-chat.donateButton.background-color": "#FF813F",
-          "floating-chat.donateButton.text-color": "#fff",
-        });
-      }
-    };
-    document.body.appendChild(script);
+    script.src = "https://embed.tawk.to/68cf7d75d3cba51921857592/1j5l845rt";
+    script.charset = "UTF-8";
+    script.setAttribute("crossorigin", "*");
+
+    const firstScript = document.getElementsByTagName("script")[0];
+    firstScript.parentNode.insertBefore(script, firstScript);
+
+    // optional: expose Tawk API object
+    window.Tawk_API = window.Tawk_API || {};
+    window.Tawk_LoadStart = new Date();
   }, []);
 
-  return null; // nothing is rendered directly, only the widget script
+  return null; // nothing is rendered directly
 };
 
-export default KoFi;
+export default TawkChat;
