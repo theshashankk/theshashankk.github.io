@@ -76,7 +76,7 @@ const MyPage = () => {
 										whileInView={{ x: 0, opacity: 1 }}
 										transition={{ delay: 0.4, type: "spring" }}
 									>
-										Hi! I&rsquo;m Shashank Sharma, a first-year BBA student specializing in Digital Marketing. I’m building my foundation in marketing strategies, branding, and digital tools while exploring how Artificial Intelligence can shape the future of this field. As I continue learning, I’m eager to apply my skills through projects, collaborations, and real-world experiences.
+										Hi! I&rsquo;m Shashank Sharma, BBA student specializing in Digital Marketing. I’m building my foundation in marketing strategies, branding, and digital tools while exploring how Artificial Intelligence can shape the future of this field. As I continue learning, I’m eager to apply my skills through projects, collaborations, and real-world experiences.
 									</motion.p>
 									<motion.div
 										className="buttons flex flex-row justify-center items-center space-x-4 mt-10"
