@@ -8,7 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import TawkChat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
 import AdsenseScript from "@/components/AdsenseScript";
-import GoogleAnalyticsScript from "@/compontents/GoogleAnalyticsScript";
+import GoogleAnalyticsScript from "@/components/GoogleAnalyticsScript";
 
 export const metadata = {
     title: "Shashank | Portofolio",
