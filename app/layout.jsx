@@ -7,6 +7,7 @@ import "./nprogress.css";
 import { Analytics } from "@vercel/analytics/react";
 import TawkChat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
+import AdsenseScript from "@/components/AdsenseScript";
 
 export const metadata = {
     title: "Shashank | Portofolio",
@@ -51,6 +52,15 @@ export const metadata = {
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
+            {/* =============================================
+              The <head> tag is implicitly rendered by Next.js 
+              in the App Router, but we can explicitly add one 
+              to place the static script tag.
+              =============================================
+            */}
+            <head>
+                <AdsenseScript /> {/* 👈 AdSense script placed here */}
+            </head>
             <body>
                 <ClientTopProgressBar />
                 <Navbar />
