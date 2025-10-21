@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import TawkChat from "@/components/Chat";
 import ClientTopProgressBar from "@/components/ClientTopProgressBar";
 import AdsenseScript from "@/components/AdsenseScript";
+import GoogleAnalyticsScript from "@/compontents/GoogleAnalyticsScript";
 
 export const metadata = {
     title: "Shashank | Portofolio",
@@ -60,6 +61,7 @@ export default function RootLayout({ children }) {
             */}
             <head>
                 <AdsenseScript /> {/* 👈 AdSense script placed here */}
+                <GoogleAnalyticsScript />
             </head>
             <body>
                 <ClientTopProgressBar />
